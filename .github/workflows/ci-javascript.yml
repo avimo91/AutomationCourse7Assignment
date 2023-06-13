@@ -47,7 +47,7 @@ jobs:
               rules_ruby_dist: rb/ruby_version.bzl
           repository-cache: true
       - name: Setup Node.js
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
           node-version: '16.x'
       - name: Setup Java
@@ -129,7 +129,7 @@ jobs:
       - name: Checkout source tree
         uses: actions/checkout@v3
       - name: Setup Node
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: '16.x'
       - name: NPM install
