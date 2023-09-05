@@ -34,7 +34,7 @@ jobs:
             location: 'C:\SeleniumWebDrivers\GeckoDriver'
     steps:
       - name: Checkout source tree
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Setup Java
         uses: actions/setup-java@v3
         with:

@@ -30,7 +30,7 @@ jobs:
         target: [ 'selenium-devtools', 'selenium-webdriver' ]
     steps:
       - name: Checkout source tree
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Setup Java
         uses: actions/setup-java@v3
         with:
@@ -75,7 +75,7 @@ jobs:
             os: ubuntu-latest
     steps:
       - name: Checkout source tree
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Setup Bazel
         uses: p0deje/setup-bazel@0.2.0
         with:
@@ -133,7 +133,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source tree
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Setup Bazel
         uses: p0deje/setup-bazel@0.2.0
         with:
@@ -156,7 +156,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source tree
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Setup Bazel
         uses: p0deje/setup-bazel@0.2.0
         with:
@@ -187,7 +187,7 @@ jobs:
             os: windows-latest
     steps:
       - name: Checkout source tree
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Set Ruby version to ${{ matrix.ruby }}
         run: echo 'RUBY_VERSION = "${{ matrix.ruby }}"' > rb/ruby_version.bzl
       - name: Setup Bazel
